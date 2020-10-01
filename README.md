@@ -8,6 +8,7 @@ Also uses [bulma](https://bulma.io/) for styling.
 
 Here's a good reference for using bulma with vue-cli: https://github.com/neovive/bulma-vuecli
 
+Tutorial for using Vue to create a SPA: https://laracasts.com/series/learn-vue-2-step-by-step
 
 ----------------
 
