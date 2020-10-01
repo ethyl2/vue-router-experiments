@@ -1,5 +1,16 @@
 # vue-router-project
 
+## Experiments with [vue-router](https://router.vuejs.org/)
+
+I used [vue-cli](https://cli.vuejs.org/) to set up this project.
+
+Also uses [bulma](https://bulma.io/) for styling.
+
+Here's a good reference for using bulma with vue-cli: https://github.com/neovive/bulma-vuecli
+
+
+----------------
+
 ## Project setup
 ```
 npm install
