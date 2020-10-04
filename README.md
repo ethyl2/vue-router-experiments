@@ -18,16 +18,29 @@ Tutorial for CRUD with Vue: https://www.taniarascia.com/getting-started-with-vue
 
 ## Other handy resources:
 
+### Vue related:
+
 Because this project doesn't use vuex for state management, I needed a way for a grandchild to emit an event for its grandparent, so I used
 an approach discussed here: [stackoverflow.com](https://stackoverflow.com/questions/42615445/vuejs-2-0-emit-event-from-grand-child-to-his-grand-parent-component/51661633)
 
-Accessible Emoji -- how to wrap in a span: https://tink.uk/accessible-emoji/
+### Assorted topics:
 
-To disable eslint for a specific line of code: [stackoverflow.com](https://stackoverflow.com/questions/47277133/disable-unnecessary-escape-character-no-useless-escape)
+**Accessible Emoji** -- how to wrap in a span: https://tink.uk/accessible-emoji/
 
-Examples of invalid email addresses for checking validation: https://www.w3resource.com/javascript/form/email-validation.php
+**To disable eslint for a specific line of code:** [stackoverflow.com](https://stackoverflow.com/questions/47277133/disable-unnecessary-escape-character-no-useless-escape)
 
-Examples of javascript regexes for email validation: [stackoverflow.com](https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript)
+**Email input validation:**
+
+- Examples of invalid email addresses for checking validation: https://www.w3resource.com/javascript/form/email-validation.php
+
+- Examples of javascript regexes for email validation: [stackoverflow.com](https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript)
+
+**To add images to your README that are located inside the repo:**
+
+1. In GitHub, go to the image inside your repo.
+2. Right-click the image and choose 'open image in new tab'
+3. Copy the url from the new tab. It will start with raw.githubusercontent.com/
+4. Use that url as the src for your image.
 
 ---
 
