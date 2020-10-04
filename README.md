@@ -12,6 +12,8 @@ Tutorial for using Vue to create a SPA: https://laracasts.com/series/learn-vue-2
 
 Tutorial for CRUD with Vue: https://www.taniarascia.com/getting-started-with-vue/
 
+<img src="https://raw.githubusercontent.com/ethyl2/vue-router-experiments/main/src/assets/logo.png" />
+
 ---
 
 ## Other handy resources:
