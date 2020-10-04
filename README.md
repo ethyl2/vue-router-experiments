@@ -10,6 +10,8 @@ Here's a good reference for using bulma with vue-cli: https://github.com/neovive
 
 Tutorial for using Vue to create a SPA: https://laracasts.com/series/learn-vue-2-step-by-step
 
+Tutorial for CRUD with Vue: https://www.taniarascia.com/getting-started-with-vue/
+
 ---
 
 ## Other handy resources:
