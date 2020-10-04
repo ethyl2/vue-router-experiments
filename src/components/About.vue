@@ -15,6 +15,6 @@
 export default {
   created() {
     // here's where you could add an axios call, etc.
-  }
-}
+  },
+};
 </script>

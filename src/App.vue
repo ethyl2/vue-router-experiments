@@ -4,7 +4,7 @@
 
     <section class="section">
       <div class="container">
-        <router-view />
+        <router-view :employees="employees" @add:employee="addEmployee" />
       </div>
     </section>
     <img alt="Vue logo" src="./assets/logo.png" />
@@ -18,6 +18,54 @@ export default {
   name: "App",
   components: {
     Header,
+  },
+  data() {
+    return {
+      employees: [
+        {
+          id: 1,
+          name: "Richard Hendricks",
+          email: "richard@piedpiper.com",
+        },
+        {
+          id: 2,
+          name: "Bertram Gilfoyle",
+          email: "gilfoyle@piedpiper.com",
+        },
+        {
+          id: 3,
+          name: "Dinesh Chugtai",
+          email: "dinesh@piedpiper.com",
+        },
+        {
+          id: 4,
+          name: "Adaline Cassidy",
+          email: "adaline@piedpiper.com",
+        },
+        {
+          id: 5,
+          name: "Adrian Winter",
+          email: "adrian@piedpiper.com",
+        },
+        {
+          id: 6,
+          name: "Persephone Kay",
+          email: "persephone@piedpiper.com",
+        },
+      ],
+    };
+  },
+  methods: {
+    addEmployee(employee) {
+      const lastId =
+        this.employees.length > 0
+          ? this.employees[this.employees.length - 1].id
+          : 0;
+      const id = lastId + 1;
+      const newEmployee = { ...employee, id };
+      this.employees = [...this.employees, newEmployee];
+      console.log("employee added");
+    },
   },
 };
 </script>

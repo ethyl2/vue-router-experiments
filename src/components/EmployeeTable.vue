@@ -8,29 +8,11 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Richard Hendricks</td>
-          <td>richard@piedpiper.com</td>
-        </tr>
-        <tr>
-          <td>Bertram Gilfoyle</td>
-          <td>gilfoyle@piedpiper.com</td>
-        </tr>
-        <tr>
-          <td>Dinesh Chugtai</td>
-          <td>dinesh@piedpiper.com</td>
-        </tr>
-        <tr>
-          <td>Adaline Cassidy</td>
-          <td>adaline@piedpiper.com</td>
-        </tr>
-        <tr>
-          <td>Adrian Winter</td>
-          <td>adrian@piedpiper.com</td>
-        </tr>
-        <tr>
-          <td>Persephone Kay</td>
-          <td>persephone@piedpiper.com</td>
+        <tr v-for="employee in employees" :key="employee.id">
+          <td>{{ employee.name }}</td>
+          <td class="email" @click="handleEmail(employee.email)">
+            <a>{{ employee.email }}</a>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -40,6 +22,14 @@
 <script>
 export default {
   name: "employee-table",
+  props: {
+    employees: Array,
+  },
+  methods: {
+    handleEmail(email) {
+      window.location.href = `mailto:${email}`;
+    },
+  },
 };
 </script>
 
