@@ -3,26 +3,23 @@
     <Header></Header>
 
     <section class="section">
-            <div class="container">
-              <router-view>
-                Test
-              </router-view>
-            </div>
-        </section>
-    <img alt="Vue logo" src="./assets/logo.png">
-
+      <div class="container">
+        <router-view />
+      </div>
+    </section>
+    <img alt="Vue logo" src="./assets/logo.png" />
   </div>
 </template>
 
 <script>
-import Header from './layouts/Header.vue'
+import Header from "./layouts/Header.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Header
-  }
-}
+    Header,
+  },
+};
 </script>
 
 <style>
