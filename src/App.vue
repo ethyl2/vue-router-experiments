@@ -4,7 +4,11 @@
 
     <section class="section">
       <div class="container">
-        <router-view :employees="employees" @add:employee="addEmployee" />
+        <router-view
+          :employees="employees"
+          @add:employee="addEmployee"
+          @delete:employee="deleteEmployee"
+        />
       </div>
     </section>
     <img alt="Vue logo" src="./assets/logo.png" />
@@ -64,6 +68,13 @@ export default {
       const id = lastId + 1;
       const newEmployee = { ...employee, id };
       this.employees = [...this.employees, newEmployee];
+    },
+    deleteEmployee(employeeId) {
+      console.log(employeeId);
+      const filteredEmployees = this.employees.filter(
+        (employee) => employee.id !== employeeId
+      );
+      this.employees = filteredEmployees;
     },
   },
 };

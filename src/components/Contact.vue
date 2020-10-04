@@ -5,7 +5,7 @@
         <div class="panel panel-default">
           <div class="panel-heading">Contacts</div>
           <div class="panel-body">
-            <employee-table :employees="employees" />
+            <employee-table :employees="employees" v-on="$listeners" />
           </div>
         </div>
 
