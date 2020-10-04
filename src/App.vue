@@ -8,6 +8,7 @@
           :employees="employees"
           @add:employee="addEmployee"
           @delete:employee="deleteEmployee"
+          @edit:employee="editEmployee"
         />
       </div>
     </section>
@@ -70,11 +71,15 @@ export default {
       this.employees = [...this.employees, newEmployee];
     },
     deleteEmployee(employeeId) {
-      console.log(employeeId);
       const filteredEmployees = this.employees.filter(
         (employee) => employee.id !== employeeId
       );
       this.employees = filteredEmployees;
+    },
+    editEmployee(employeeId, updatedEmployee) {
+      this.employees = this.employees.map((employee) =>
+        employee.id == employeeId ? updatedEmployee : employee
+      );
     },
   },
 };
