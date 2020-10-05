@@ -1,5 +1,7 @@
 # vue-router-project
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8fe722af-10d9-4310-a6f2-db8d5707835c/deploy-status)](https://app.netlify.com/sites/vue-router-experiments/deploys)
+
 ## Experiments with [vue-router](https://router.vuejs.org/)
 
 ### Deployed site: https://vue-router-experiments.netlify.app/
