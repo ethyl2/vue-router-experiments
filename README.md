@@ -2,6 +2,10 @@
 
 ## Experiments with [vue-router](https://router.vuejs.org/)
 
+### Deployed site: https://vue-router-experiments.netlify.app/
+
+---
+
 I used [vue-cli](https://cli.vuejs.org/) to set up this project.
 
 Also uses [bulma](https://bulma.io/) for styling.
@@ -11,6 +15,16 @@ Here's a good reference for using bulma with vue-cli: https://github.com/neovive
 Tutorial for using Vue to create a SPA: https://laracasts.com/series/learn-vue-2-step-by-step
 
 Tutorial for CRUD with Vue: https://www.taniarascia.com/getting-started-with-vue/
+
+## Deploying with netlify -- so easy!
+
+Because I started this site with vue-cli, all I need to do is:
+
+1. Go to netlify.com, log in, and choose 'new site from git'
+2. After linking this repo, when prompted, type the build command 'npm run build' and type the publish directory as 'dist' in the inputs.
+3. Click 'Deploy site'!
+
+More info on deploying with netlify: https://www.netlify.com/blog/2019/11/30/how-to-deploy-a-vue-site/
 
 <img src="https://raw.githubusercontent.com/ethyl2/vue-router-experiments/main/src/assets/logo.png" />
 
