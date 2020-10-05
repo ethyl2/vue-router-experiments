@@ -13,6 +13,10 @@ let routes = [
     path: '/contact',
     component: require('./components/Contact.vue').default,
   },
+  {
+    path: '/json',
+    component: require('./components/JsonPlaceholder.vue').default,
+  },
 ];
 export default new VueRouter({
   routes,
