@@ -10,6 +10,10 @@
       <router-link to="/json" class="navbar-item">
         JSON Placeholder
       </router-link>
+
+      <router-link to="/make-image" class="navbar-item">
+        HTML to Image
+      </router-link>
     </div>
   </div>
 </template>

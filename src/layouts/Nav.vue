@@ -14,6 +14,9 @@
         <router-link tag="li" to="/json">
           <a>JSON Placeholder</a>
         </router-link>
+        <router-link tag="li" to="/make-image">
+          <a>HTML to Image</a>
+        </router-link>
       </ul>
     </div>
   </nav>
