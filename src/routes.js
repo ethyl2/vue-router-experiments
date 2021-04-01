@@ -17,6 +17,10 @@ let routes = [
     path: '/json',
     component: require('./components/JsonPlaceholder.vue').default,
   },
+  {
+    path: '/make-image',
+    component: require('./components/Html2Canvas.vue').default,
+  },
 ];
 export default new VueRouter({
   routes,
